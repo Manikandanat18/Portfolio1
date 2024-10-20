@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mani</title>
-  <link rel="icon"
-    href="https://img.icons8.com/?size=100&id=54256&format=png&color=000000">
+  <link rel="icon" href="https://img.icons8.com/?size=100&id=54256&format=png&color=000000">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
     .header {
@@ -68,7 +67,7 @@
 
     }
 
-      
+
     .menu a:hover {
       text-decoration: underline;
       color: red;
@@ -260,7 +259,7 @@
     }
 
     .p4 {
-      background-color:black;
+      background-color: black;
       text-align: center;
       color: white;
     }
@@ -382,43 +381,57 @@
     /* For mobile devices */
     @media only screen and (max-width: 560px) {
       body {
-        max-width: 100%;
+        /* width:900px; */
+      }
+
+      .git{
+       font-size: x-large;
       }
 
       .header {
-        flex-direction: column;
-        width: 200px;
+        flex-direction: row;
+        width: 1000px;
       }
 
       .men {
-        /* position: relative;
-z-index: 1;  */
+        /* background-color:transparent; */
       }
 
       .home {
         flex-direction: column;
+        gap: 400px;
         text-align: start;
-        padding-left: 300px;
-        /* position: relative;
-z-index: 2;  */
-        bottom: 200px;
-        /* display: inline-block; */
+        padding-left: 150px;
+      }
+
+      .img {
+        width: 700px;
+        height: 700px;
+      }
+
+      .img:hover {
+        width: 700px;
+        height: 700px;
       }
 
       .text {
-        padding-left: 130px;
+        padding-left: 190px;
+        width: fit-content;
+        font-size: 300%;
+
       }
 
       .intro:hover {
         border-radius: 30px;
-        height: 200px;
+        height: 400px;
         box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 
       }
 
-      .skill{
-        width:300px;
-        height: 200px;
+      .skill {
+        width: 300px;
+        height: 300px;
+
       }
 
 
@@ -433,23 +446,49 @@ z-index: 2;  */
       }
 
       .aboutone {
-        margin-left: 330px;
-        width: 100%;
+        margin-left: 160px;
+        width: 650px;
+        height: 800px;
+        text-align: center;
+        padding: 5%;
+        font-size: x-large;
+
       }
 
       .abouttwo {
-        margin-left: 350px;
-        width: 100%;
+        padding: 50%;
+        height: 800px;
+        margin-left: 160px;
+      }
+
+      .a {
+        font-size: 300%;
+      }
+
+      .p {
+        font-size: 120%;
+
+      }
+
+      .pr {
+        font-size: 140%;
+
+      }
+
+      .linkedin {
+        font-size: 180%;
+
       }
 
       .education {
         flex-direction: column;
-        row-gap: 80px;
-        margin-left: 250px;
+        row-gap: 150px;
+        margin-left: 180px;
       }
 
       .res {
         padding-left: 160px;
+        font-size: x-large;
       }
 
       .edu {
@@ -457,44 +496,134 @@ z-index: 2;  */
       }
 
       .bba {
-        margin-left: 100px;
+        margin-left: 0px;
+        width: 600px;
+        height: fit-content;
+        font-size: xx-large;
       }
 
+      .scl{
+        margin-left: 0px;
+        width: 600px;
+        height: fit-content;
+        font-size: xx-large;
+      }
       .load {
-        padding-left: 450px;
+        padding-left: 400px;
       }
-
+        .d{
+          font-size: xx-large;
+        }
       .pi {
-        padding-left: 270px;
-        row-gap: 150px;
+      margin-left: 180px;    
+    row-gap: 250px;
+        font-size: xx-large;
       }
+       .i{
+        width: 600px;
+        height: 500px ;
+       }
+     
+       .p1:hover {
+        width: fit-content;
+        height: fit-content;
+      box-shadow: 0 4px 8px 0 whitesmoke, 0 6px 20px 0 white;
 
+    }
+
+    .p2:hover {
+      width: fit-content;
+      height: fit-content;
+      box-shadow: 0 4px 8px 0 whitesmoke, 0 6px 20px 0 white;
+
+    }
+
+    .p3:hover {
+      width: fit-content;
+      height: fit-content;
+      box-shadow: 0 4px 8px 0 whitesmoke, 0 6px 20px 0 whitesmoke;
+
+    }
+
+    .p4:hover {
+      width: fit-content;
+      height: fit-content;
+      box-shadow: 0 4px 8px 0 whitesmoke, 0 6px 20px 0 white;
+    }
+
+    
       .proone {
         margin-left: 320px;
-        width: 100%;
+        width: 400px;
       }
 
+      .Address{
+        grid-area: 1;
+      }
+
+      .email{
+        grid-area:2 ;
+      }
+
+      .contactus{
+        grid-area:3 ;
+      }
+
+      .download{
+        grid-area:4 ;
+      }
+
+      
       .detail {
-        flex-direction: row;
-        column-gap: 100px;
-        margin-left: 110px;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas:'1 1 2 2';
+        gap: 100px;
+        margin-left: 280px;
+        font-size: xx-large;
+      }
+     
+      .down{
+        width: 150px;
+        height:150px ;
+      }
+
+      .send{
+        width: 150px;
+        height:150px ;
+      }
+      
+      .location{
+        width: 150px;
+        height:150px ;
+      }
+
+      .number{
+        width: 150px;
+        height:150px ;
       }
 
       .contacthead {
-        padding-left: 350px;
-        width: 100%;
+        margin-left: 320px;
+        width: 400px;
       }
+      
 
       .final {
-        width: 100%;
-      }
+flex-direction: column; 
+width:300px;
+text-align: center;
+
+}
 
       .copy {
-        padding-left: 350px;
-        width: 100%;
+        padding-left: 200px;
+        width: 600px;
+        font-size: x-large;
       }
     }
 
+    */
     /* media query */
   </style>
 </head>
@@ -557,7 +686,7 @@ z-index: 2;  */
       <h2>A Java Full Stack Developer</h2>
 
       <p class="github"> <a href="https://github.com/Manikandanat18" style="text-decoration: none;color: black;">
-          <button style="background-color:orange;"> MY WORKS</button></a></p>
+          <button class="git" style="background-color:orange;"> MY WORKS</button></a></p>
     </div>
     <div class="image">
       <img src="./image/img port.jpg" class="img" width="550px" height="550px">
@@ -579,25 +708,25 @@ z-index: 2;  */
       </div>
       <div class="skills">
         <h4 style="color: grey;">Skills</h4>
-        <img  class="skill" src="./image/Screenshot 2024-10-12 181136.png" width="400px" height="300px">
+        <img class="skill" src="./image/Screenshot 2024-10-12 181136.png" width="400px" height="300px">
       </div>
 
     </div>
     <div class="abouttwo" style="width: 360px; font-size: large;">
-      <h1>About Me</h1><br>
-      <p style="color: grey;">
+      <h1 class="a">About Me</h1><br>
+      <p class="p" style="color: grey;">
         A highly motivated and detail-oriented Java Full-Stack Developer with a strong foundation in
         Frontend(HTML,CSS,JAVASCRIPT,REACT) and Backend(JAVA,SPRING BOOT,SQL). Seeking an entry-level position where I
         can apply my technical skills and contribute to innovative projects.
 
       </p><br>
-      <pre
+      <pre class="pr"
         style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Profile:</b>             Java developer</pre>
-      <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Education:</b>       Bachelor of Business 
+      <pre class="pr" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Education:</b>       Bachelor of Business 
                          Administration</pre>
-      <pre
+      <pre class="pr"
         style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Language:</b>        English,Tamil</pre>
-      <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Other Skills:</b>    Java,Sql,Html,Css,Git,
+      <pre class="pr" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><b>Other Skills:</b>    Java,Sql,Html,Css,Git,
                          Javascript,MS Word,MS 
                          Excel basics;</pre>
       <button style="background-color: orange;"><a href="https://www.linkedin.com/in/mani-kandan-a97310251?"
@@ -639,7 +768,7 @@ z-index: 2;  */
     </div>
     <div class="load">
       <button style="margin-left: 46%; margin-top: 50px;margin-bottom: 30px;background-color: orange;"><a
-          href="./resume.html" style="text-decoration: none; color: white;">DOWNLOAD CV</button></a>
+          href="./resume.html" class="d" style="text-decoration: none; color: white;">DOWNLOAD CV</button></a>
     </div>
   </section>
 
@@ -652,22 +781,26 @@ z-index: 2;  */
     </div>
     <div class="pi">
       <div class="p1">
-        <a href="https://github.com/Manikandanat18/Login-page/tree/main/Login"><img src="./image/Screenshot 2024-10-16 002631.png" width="500px" height="300px"></a><br>
+        <a href="https://github.com/Manikandanat18/Login-page/tree/main/Login"><img
+          class="i"   src="./image/Screenshot 2024-10-16 002631.png" width="500px" height="300px"></a><br>
         <h2>Register Page</h2>
         <h5>Register page by using html:5,css:3</h5>
       </div>
       <div class="p2">
-        <a href="https://github.com/Manikandanat18/webpage/tree/main/wepage"><img src="./image/Screenshot 2024-09-16 212602.png" width="500px" height="300px"></a>
+        <a href="https://github.com/Manikandanat18/webpage/tree/main/wepage"><img
+          class="i"  src="./image/Screenshot 2024-09-16 212602.png" width="500px" height="300px"></a>
         <h2>Single static Page</h2>
         <h5>Single static page by using html:5,css:3</h5>
       </div>
       <div class="p3">
-        <a href="https://github.com/Manikandanat18/MRF-web/tree/main/MRF"><img src="./image/mrf.png" width="500px" height="300px"></a>
+        <a href="https://github.com/Manikandanat18/MRF-web/tree/main/MRF"><img class="i" src="./image/mrf.png" width="500px"
+            height="300px"></a>
         <h2>MRF Website page</h2>
         <h5>MRF Website page by using html:5,css:3</h5>
       </div>
       <div class="p4" style="padding: auto;">
-        <a href="https://github.com/Manikandanat18/Portfolio"><img src="./image/portfolio.png" width="500px" height="300px"></a>
+        <a href="https://github.com/Manikandanat18/Portfolio/tree/main/portfolio"><img class="i" src="./image/portfolio.png"
+            width="500px" height="300px"></a>
         <h2>Portfolio webpage</h2>
         <h5>Portfolio webpage by using html:5,css:3,BOOTSTRAP and JAVASCRIPT</h5>
       </div>
@@ -714,12 +847,13 @@ z-index: 2;  */
     </div>
     <div class="final">
       <h3 style="margin-top: 10px;color: grey;">Find me on</h3>
+      <div class="s">
       <a href="https://www.linkedin.com/in/mani-kandan-a97310251?"><img class="link" src="./image/linkedin.png"
           width="50px" height="50px"></a>
       <a href="https://x.com/Manikan56884171"><img class="twi" src="./image/twitter.png" width="50px" height="50px"></a>
       <a href="https://www.instagram.com/__itzzmanii/"><img class="insta" src="./image/instagram.png" width="50px"
           height="50px"></a>
-
+        </div>
     </div>
     <h4 class="copy" style="text-align: center;margin-top: 200px; color: grey;">Copyright ©2024 All rights reserved by
       Mani!!</h4>
